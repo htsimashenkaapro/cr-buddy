@@ -1,0 +1,25 @@
+/* WatIsHet specific styles if needed */
+.wat-button {
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+}
+
+@media (min-width: 768px) {
+  .wat-button {
+    box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 1);
+  }
+}
+
+.wat-card {
+  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 1);
+}
+
+@media (min-width: 768px) {
+  .wat-card {
+    box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+  }
+}
+
+
+
+
+

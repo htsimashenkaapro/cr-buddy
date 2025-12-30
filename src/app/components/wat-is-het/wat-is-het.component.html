@@ -1,0 +1,32 @@
+<div class="mb-[0px] mt-[0px] mr-[0px] ml-[0px] border-b-4 border-black pb-4 md:pb-8 relative overflow-hidden m-[0px]">
+  <!-- Comic-style dotted background -->
+  <app-dotted-background></app-dotted-background>
+  
+  <div class="flex justify-center mb-4 md:mb-6 mt-8 md:mt-12 mr-[0px] ml-[0px] relative z-10">
+    <div class="relative inline-flex items-center">
+      <button
+        class="wat-button bg-[#2DD4BF] text-black px-4 py-2 md:px-8 md:py-3 lg:px-12 lg:py-4.5 rounded-full border-2 md:border-4 border-black hover:bg-cyan-500 transition-colors uppercase tracking-wide text-sm md:text-base lg:text-2xl"
+        style="font-weight: 700;"
+      >
+        {{ title }}
+      </button>
+      <div class="hidden md:block absolute -right-[60px] -top-9 w-24 h-18 pointer-events-none rotate-[30deg]">
+        <app-group-icon></app-group-icon>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-wrap justify-center gap-3 md:gap-6 mx-[0px] my-[10px] relative z-10 px-4">
+    <div
+      *ngFor="let card of cards; let i = index"
+      class="wat-card bg-white p-4 md:p-6 lg:p-8 rounded-xl md:rounded-2xl border-2 md:border-4 border-black hover:shadow-xl transition-all duration-300 hover:-translate-y-1 w-full md:w-[calc((100%-48px)/3)] md:max-w-[400px] flex items-center justify-center min-h-[150px] md:min-h-[180px] lg:min-h-[200px]"
+    >
+      <p class="text-center text-gray-700 text-base md:text-lg">
+        {{ card }}
+      </p>
+    </div>
+  </div>
+</div>
+
+
+

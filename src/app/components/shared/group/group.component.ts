@@ -1,0 +1,59 @@
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+const svgPaths = {
+  p13d1bf00:
+    "M0 26.1346L33.6649 88.7125H53.4772L41.5978 16.2485L0 26.1346ZM87.9273 0L132.686 14.6579L97.0482 93.4643L74.86 86.7394L87.9273 0ZM156.848 46.7321L185.358 84.7662L125.961 116.438L111.303 97.4308L156.848 46.7321Z",
+  p1623dc70:
+    "M9.32185 29.9193L43.0068 92.4972H62.799L50.9197 20.0332L9.32185 29.9193ZM97.2693 3.7847L142.008 18.4426L106.37 97.2691L84.1819 90.524L97.2693 3.7847ZM166.169 50.5168L194.7 88.5509L135.283 120.222L120.625 101.215L166.169 50.5168Z",
+};
+
+@Component({
+  selector: 'app-group-icon',
+  standalone: true,
+  imports: [CommonModule],
+  template: `
+    <div class="relative w-full h-full" data-name="Group">
+      <svg
+        class="block w-full h-full"
+        fill="none"
+        preserveAspectRatio="none"
+        viewBox="0 0 195 121"
+      >
+        <g clip-path="url(#clip0_4_1364)" id="Group">
+          <path
+            clip-rule="evenodd"
+            [attr.d]="svgPaths.p13d1bf00"
+            fill="var(--fill-0, black)"
+            fill-rule="evenodd"
+            id="Vector"
+          />
+          <path
+            clip-rule="evenodd"
+            [attr.d]="svgPaths.p1623dc70"
+            fill="var(--fill-0, #F26F8D)"
+            fill-rule="evenodd"
+            id="Vector_2"
+            stroke="var(--stroke-0, black)"
+            stroke-miterlimit="22.926"
+            stroke-width="4.22825"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_4_1364">
+            <rect fill="white" height="120.222" width="194.7" />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+  `,
+})
+export class GroupComponent {
+  protected svgPaths = svgPaths;
+}
+
+
+
+
+
+
