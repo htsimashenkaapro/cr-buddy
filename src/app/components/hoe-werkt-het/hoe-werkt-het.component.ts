@@ -24,7 +24,7 @@ export class HoeWerktHetComponent implements OnInit, OnDestroy {
   subtitle = '';
   buddies: Buddy[] = [];
   selectedBuddy: number | null = null;
-  private destroy$ = new Subject<void>();
+  readonly destroy$ = new Subject<void>();
 
   // You would need to add these images to src/assets folder
   firstBlockImage = 'assets/first-block.png';

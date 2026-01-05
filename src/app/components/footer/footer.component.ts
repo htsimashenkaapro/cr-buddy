@@ -21,7 +21,7 @@ export class FooterComponent implements OnInit, OnDestroy {
   question = '';
   options: FooterOption[] = [];
   selectedOption: string | null = null;
-  private destroy$ = new Subject<void>();
+  readonly destroy$ = new Subject<void>();
 
   constructor(public languageService: LanguageService) {}
 

@@ -17,7 +17,7 @@ export class TransparantieComponent implements OnInit, OnDestroy {
   verification: any = {};
   gdpr: any = {};
   liability: any = {};
-  private destroy$ = new Subject<void>();
+  readonly destroy$ = new Subject<void>();
 
   constructor(public languageService: LanguageService) {}
 

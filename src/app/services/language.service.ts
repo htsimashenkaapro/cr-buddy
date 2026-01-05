@@ -198,7 +198,7 @@ const translations = {
   providedIn: 'root'
 })
 export class LanguageService {
-  private languageSubject = new BehaviorSubject<Language>(this.getInitialLanguage());
+  readonly languageSubject = new BehaviorSubject<Language>(this.getInitialLanguage());
   public language$ = this.languageSubject.asObservable();
 
   constructor() {

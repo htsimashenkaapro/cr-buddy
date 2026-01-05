@@ -22,7 +22,7 @@ export class FaqComponent implements OnInit, OnDestroy {
   subtitle = '';
   faqs: FAQ[] = [];
   openIndex: number | null = null;
-  private destroy$ = new Subject<void>();
+  readonly destroy$ = new Subject<void>();
 
   constructor(public languageService: LanguageService) {}
 

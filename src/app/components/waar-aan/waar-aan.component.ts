@@ -18,7 +18,7 @@ export class WaarAanComponent implements OnInit, OnDestroy {
   careRecipients: any = {};
   organizations: any = {};
   careProviders: any = {};
-  private destroy$ = new Subject<void>();
+  readonly destroy$ = new Subject<void>();
 
   constructor(public languageService: LanguageService) {}
 

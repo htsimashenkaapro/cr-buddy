@@ -15,7 +15,7 @@ import { Subject, takeUntil } from 'rxjs';
 export class WatIsHetComponent implements OnInit, OnDestroy {
   title = '';
   cards: string[] = [];
-  private destroy$ = new Subject<void>();
+  readonly destroy$ = new Subject<void>();
 
   constructor(public languageService: LanguageService) {}
 

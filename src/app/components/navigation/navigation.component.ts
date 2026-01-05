@@ -13,7 +13,7 @@ import { Subject, takeUntil } from 'rxjs';
 export class NavigationComponent implements OnInit, OnDestroy {
   isOpen = false;
   language: Language = 'nl';
-  private destroy$ = new Subject<void>();
+  readonly destroy$ = new Subject<void>();
   
   menuItems: Array<{ label: string; href: string }> = [];
 

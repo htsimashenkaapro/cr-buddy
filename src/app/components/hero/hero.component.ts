@@ -14,7 +14,7 @@ export class HeroComponent implements OnInit, OnDestroy {
   tagline = '';
   seekCare = '';
   giveCare = '';
-  private destroy$ = new Subject<void>();
+  readonly destroy$ = new Subject<void>();
 
   // You would need to add these images to src/assets folder
   logoUrl = 'assets/logo.png';
